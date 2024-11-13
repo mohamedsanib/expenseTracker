@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+
+@layer base {
+    /* Hide the spin buttons in Chrome, Safari, Edge, and Opera */
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+      @apply appearance-none;
+      margin: 0;
+    }
+  
+    /* Hide the spin buttons in Firefox */
+    input[type="number"] {
+      @apply appearance-none;
+      -moz-appearance: textfield;
+    }
+  }
